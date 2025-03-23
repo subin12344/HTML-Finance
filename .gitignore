@@ -1,0 +1,54 @@
+# Laravel / PHP related
+/vendor/
+/node_modules/
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/logs
+
+# Environment files
+/.env
+.env.backup
+.env.production
+.phpunit.result.cache
+.phpunit.cache
+
+# Docker
+docker-compose.override.yml
+
+# Homestead
+Homestead.json
+Homestead.yaml
+
+# Logs
+npm-debug.log
+yarn-error.log
+
+# IDE/editor config files
+/.fleet
+/.idea
+/.vscode
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.swp
+*.swo
+*.log
+
+# Custom paths (if needed, these are often optional)
+*.bak
+*.old
+*.tmp
+*.dump
+
+# Exclude specific assets but include public/assets if necessary
+/public/css
+/public/js
+
+# If you want to keep a specific directory like public/assets, include it like so:
+!/public/assets
+!/public/assets/*
