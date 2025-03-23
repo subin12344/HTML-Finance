@@ -44,10 +44,7 @@ $navbarDetached = ($navbarDetached ?? '');
         <!-- /Search -->
         <ul class="navbar-nav flex-row align-items-center ms-auto">
 
-          <!-- Place this tag where you want the button to render. -->
-          <li class="nav-item lh-1 me-4">
-            <a class="github-button" href="{{config('variables.repository')}}" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themeselection/sneat-html-laravel-admin-template-free on GitHub">Star</a>
-          </li>
+
 
           <!-- User -->
           <li class="nav-item navbar-dropdown dropdown-user dropdown">
@@ -72,35 +69,21 @@ $navbarDetached = ($navbarDetached ?? '');
                   </div>
                 </a>
               </li>
+
               <li>
                 <div class="dropdown-divider my-1"></div>
               </li>
               <li>
-                <a class="dropdown-item" href="javascript:void(0);">
-                  <i class="bx bx-user bx-md me-3"></i><span>My Profile</span>
+                <a class="dropdown-item" href="javascript:void(0);" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    <i class="bx bx-power-off bx-md me-3"></i><span>Log Out</span>
                 </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="javascript:void(0);">
-                  <i class="bx bx-cog bx-md me-3"></i><span>Settings</span>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="javascript:void(0);">
-                  <span class="d-flex align-items-center align-middle">
-                    <i class="flex-shrink-0 bx bx-credit-card bx-md me-3"></i><span class="flex-grow-1 align-middle">Billing Plan</span>
-                    <span class="flex-shrink-0 badge rounded-pill bg-danger">4</span>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <div class="dropdown-divider my-1"></div>
-              </li>
-              <li>
-                <a class="dropdown-item" href="javascript:void(0);">
-                  <i class="bx bx-power-off bx-md me-3"></i><span>Log Out</span>
-                </a>
-              </li>
+
+                <!-- Logout form (hidden) -->
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
+            </li>
+
             </ul>
           </li>
           <!--/ User -->
