@@ -1,6 +1,10 @@
 <?php
 
 use App\Http\Controllers\authentications\AuthController;
+use App\Http\Controllers\FCustomerController;
+use App\Http\Controllers\FKaratController;
+use App\Http\Controllers\FGoldAssetController;
+use App\Http\Controllers\FFiscYearController;
 use App\Http\Controllers\authentications\ForgotPasswordBasic;
 use App\Http\Controllers\authentications\LoginBasic;
 use App\Http\Controllers\authentications\RegisterBasic;
@@ -118,3 +122,9 @@ Route::get('/form/layouts-horizontal', [HorizontalForm::class, 'index'])->name('
 
 // tables
 Route::get('/tables/basic', [TablesBasic::class, 'index'])->name('tables-basic');
+
+// In routes/api.php for API routes
+Route::resource('customers', FCustomerController::class);
+Route::resource('karats', FKaratController::class);
+Route::resource('gold-assets', FGoldAssetController::class);
+Route::resource('fisc-years', FFiscYearController::class);

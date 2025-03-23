@@ -1,19 +1,20 @@
 {
   "menu": [
     {
-      "url": "/",
       "name": "Dashboards",
       "icon": "menu-icon tf-icons bx bx-home-smile",
       "slug": "dashboard",
-      "badge": [
-        "danger",
-        "5"
-      ],
+      "url": "dashboard"
+    },
+    {
+      "name": "Master Settings",
+      "icon": "menu-icon tf-icons bx bx-box",
+      "slug": "pages-account-settings",
       "submenu": [
         {
-          "url": "/",
-          "name": "Analytics",
-          "slug": "dashboard-analytics"
+          "url": "pages/account-settings-account",
+          "name": "Financial Year",
+          "slug": "pages-account-settings-account"
         }
       ]
     },
@@ -26,31 +27,6 @@
           "url": "pages/account-settings-account",
           "name": "Account",
           "slug": "pages-account-settings-account"
-        }
-      ]
-    },
-    {
-      "name": "Authentications",
-      "icon": "menu-icon tf-icons bx bx-lock-open-alt",
-      "slug": "auth",
-      "submenu": [
-        {
-          "url": "auth/login-basic",
-          "name": "Login",
-          "slug": "auth-login-basic",
-          "target": "_blank"
-        },
-        {
-          "url": "auth/register-basic",
-          "name": "Register",
-          "slug": "auth-register-basic",
-          "target": "_blank"
-        },
-        {
-          "url": "auth/forgot-password-basic",
-          "name": "Forgot Password",
-          "slug": "auth-forgot-password-basic",
-          "target": "_blank"
         }
       ]
     },
