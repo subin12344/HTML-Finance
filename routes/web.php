@@ -127,4 +127,6 @@ Route::get('/tables/basic', [TablesBasic::class, 'index'])->name('tables-basic')
 Route::resource('customers', FCustomerController::class);
 Route::resource('karats', FKaratController::class);
 Route::resource('gold-assets', FGoldAssetController::class);
-Route::resource('fisc-years', FFiscYearController::class);
+Route::resource('fiscal-years', FFiscYearController::class);
+Route::get('fiscal-years/data', [FFiscYearController::class, 'getData'])->name('fiscal-years.data');
+

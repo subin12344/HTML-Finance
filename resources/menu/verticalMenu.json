@@ -12,7 +12,7 @@
       "slug": "pages-account-settings",
       "submenu": [
         {
-          "url": "pages/account-settings-account",
+          "url": "fiscal-years",
           "name": "Financial Year",
           "slug": "pages-account-settings-account"
         }
